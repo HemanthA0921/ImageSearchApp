@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    line-height: 1.6;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 36;
+    text-align: center;
+    margin: 40px 0 40px 0;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+#search-input{
+    width: 60%;
+    max-width: 400px;
+    border: none;
+    padding: 10px 20px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+    background-color: #ECF8F9;
+}
+
+#search-button{
+    padding: 10px 20px;
+    background-color: #DB005B;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-left: 10px;
+    color: #fff;
+}
+
+#search-button:hover {
+    transform: scale(1.1)
+}
+
+.search-results{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.search-result{
+    margin-bottom: 60px;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.search-result img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.search-result:hover img{
+    opacity: 0.8;
+    transform: scale(1.2);
+}
+
+.search-result a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+    background-color: #ECF8F9;
+}
+
+/* .search-result:hover a{
+    display: block;
+    background-color: #ECF8F9;
+} */
+
+#show-more-button{
+    background-color: #F79327;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    margin: 30px auto;
+    border-radius: 5px;
+    display: none;
+}
+
+#show-more-button:hover {
+    transform: scale(1.1)
+}
+
+@media screen and (max-width: 768px){
+    .search-result{
+        width: 45%;
+    }
+    .search-results{
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 480px){
+    .search-result{
+        width: 100%;
+    }
+}
+
+
